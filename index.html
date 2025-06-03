@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <form action="#" class="register">
+        <h1 class="h1">Login Page</h1>
+        <div class="form">
+            <div class="formlist"> 
+                <label for="name">Name</label>
+                <input type="text" placeholder="enter the name" minlength="5" id="name">
+            </div>
+            <div class="formlist">
+                <label for="mail">e-mail</label>
+                <input type="email" placeholder="enter the email" id="mail" required >
+            </div>
+            <div class="formlist">
+                <label for="password">password</label>
+                <input type="password" placeholder="enter the password"  id="password" required>
+            </div>
+            <div>
+                <button type="submit" id="btn">submit</button>
+                <button type="reset">reset</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        btn.addEventListener('click',()=>{
+            var btn = document.getElementById("btn")
+            var name = document.getElementById("name").value
+            var mail = document.getElementById("mail").value
+            var password = document.getElementById("password").value
+            if(name=="varshini" || mail=="varshini@gmail.com" || password=="vars123")
+            {
+                alert("submitted");
+                console.log("submitted");
+            }
+            else
+            {
+
+                console.log(name);
+                console.log(mail);
+                console.log(password);
+                alert("user not found");
+                console.log("submitted");
+            }
+        });
+    </script>
+</body>
+</html>
